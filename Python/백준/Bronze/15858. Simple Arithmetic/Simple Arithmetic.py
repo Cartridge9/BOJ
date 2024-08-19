@@ -1,2 +1,3 @@
-a, b, c = map(int, input().split())
+from decimal import Decimal
+a, b, c = map(Decimal, input().split())
 print(a*b/c)

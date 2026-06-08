@@ -1,0 +1,3 @@
+SELECT p.id, COUNT(c.id) AS CHILD_COUNT
+FROM ECOLI_DATA p LEFT JOIN ECOLI_DATA c ON p.id = c.parent_id
+GROUP BY p.id;
